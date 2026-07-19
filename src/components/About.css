@@ -1,0 +1,208 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-photo-wrap {
+  position: relative;
+  width: 140px;
+}
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.about-photo-tag {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+}
+
+.about-photo-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--mint);
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.about-bio p {
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.about-education {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.about-education-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--violet);
+  margin-top: 6px;
+  flex: none;
+}
+
+.about-education-degree { font-weight: 600; font-size: 15px; }
+.about-education-school { color: var(--text-faint); font-size: 13.5px; margin-top: 2px; }
+
+.about-side-heading {
+  font-size: 14px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  margin-bottom: 24px;
+}
+
+.philosophy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.philosophy-item {
+  display: flex;
+  gap: 16px;
+}
+
+.philosophy-index {
+  font-family: var(--font-mono);
+  color: var(--violet);
+  font-size: 13px;
+  margin-top: 2px;
+  flex: none;
+}
+
+.philosophy-title {
+  font-weight: 600;
+  font-size: 15.5px;
+  margin-bottom: 6px;
+}
+
+.philosophy-body {
+  color: var(--text-dim);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* ---- experience ---- */
+.experience-block { margin-top: 88px; }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+.experience-row:last-child { border-bottom: 1px solid var(--line); }
+
+.experience-period {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-faint);
+  padding-top: 4px;
+}
+
+.experience-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.experience-company {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.experience-role {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.experience-points {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.experience-points li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--text-dim);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.experience-points li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 9px;
+  width: 5px; height: 1.5px;
+  background: var(--text-faint);
+}
+
+.experience-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+}
+.experience-links a {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--violet);
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s;
+}
+.experience-links a:hover { border-color: var(--violet); }
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 56px; }
+}
+
+@media (max-width: 640px) {
+  .experience-row { grid-template-columns: 1fr; gap: 10px; }
+}

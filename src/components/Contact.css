@@ -1,0 +1,62 @@
+.contact-panel {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-grid-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, var(--violet-bg), transparent 60%);
+  pointer-events: none;
+}
+
+.contact-status {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.contact-heading {
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1.1;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-sub {
+  color: var(--text-dim);
+  font-size: 17px;
+  max-width: 480px;
+  margin: 22px auto 0;
+  position: relative;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-faint);
+  position: relative;
+}
+.contact-links a { transition: color .2s; }
+.contact-links a:hover { color: var(--violet); }

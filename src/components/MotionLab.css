@@ -1,0 +1,176 @@
+.motion-stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 5vw, 64px);
+  padding: 60px 0 20px;
+  flex-wrap: wrap;
+}
+
+.motion-ambient {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 600px; height: 600px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, var(--violet-bg) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 34px;
+  padding: 14px 14px 22px;
+  box-shadow: var(--shadow);
+  animation: phone-float 6s ease-in-out infinite;
+}
+.phone--right { animation-duration: 7s; animation-direction: reverse; }
+.phone--left { transform: rotate(-3deg); }
+.phone--right { transform: rotate(3deg); }
+
+@keyframes phone-float {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0)); }
+  50% { transform: translateY(-14px) rotate(var(--r, 0)); }
+}
+.phone--left { --r: -3deg; }
+.phone--right { --r: 3deg; }
+
+.phone-notch {
+  width: 52px;
+  height: 6px;
+  border-radius: 100px;
+  background: var(--line-strong);
+  margin: 0 auto 14px;
+}
+
+.demo-screen {
+  background: var(--bg-soft);
+  border-radius: 22px;
+  padding: 18px 16px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.demo-app-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.demo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+.demo-card--small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+
+.demo-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.demo-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding: 4px 9px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  transition: background .3s, color .3s;
+}
+.demo-badge--mint { background: var(--mint-bg); color: var(--mint); }
+.demo-badge--amber { background: var(--amber-bg); color: var(--amber); }
+.demo-badge--violet { background: var(--violet-bg); color: var(--violet); }
+
+.demo-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 56px;
+}
+.demo-bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--violet), var(--violet-light));
+  border-radius: 3px 3px 0 0;
+  animation: bar-grow 2.4s ease-in-out infinite alternate;
+  opacity: 0.85;
+}
+@keyframes bar-grow {
+  from { transform: scaleY(0.7); }
+  to { transform: scaleY(1); }
+}
+
+.demo-value { font-weight: 700; color: var(--mint); font-family: var(--font-mono); font-size: 13px; }
+
+.demo-row-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 11px 12px;
+}
+
+.demo-row-title { font-size: 12px; font-weight: 600; }
+.demo-row-sub { font-size: 11px; color: var(--text-faint); margin-top: 2px; }
+
+.demo-resend {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  border: 1px solid var(--violet);
+  color: var(--violet);
+  background: transparent;
+  border-radius: 100px;
+  padding: 7px 13px;
+  min-width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .25s, color .25s, transform .25s;
+}
+.demo-resend--idle:hover { background: var(--violet); color: #fff; transform: translateY(-1px); }
+.demo-resend--loading { border-color: var(--line-strong); color: var(--text-faint); }
+.demo-resend--done { background: var(--mint-bg); border-color: var(--mint); color: var(--mint); }
+
+.demo-spinner {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+  border-top-color: var(--text-faint);
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.demo-hint {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .phone { width: 100%; max-width: 280px; }
+}

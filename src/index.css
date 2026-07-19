@@ -1,0 +1,221 @@
+/* ===================================================================
+   DESIGN TOKENS
+   Palette grounded in Prashant's own Reqore Mail design system —
+   the violet is his literal brand primary. Mint/amber double as
+   semantic "status" colors (operational / processing), echoing the
+   status-badge language from his real case study.
+=================================================================== */
+
+:root {
+  /* type */
+ --font-display: 'IBM Plex Serif', serif;
+  --font-body: 'IBM Plex Serif', serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+
+  /* accents — identical across themes, brand stays constant */
+  --violet: #7D3BDE;
+  --violet-dark: #5E1FC7;
+  --violet-light: #EDE7FB;
+  --mint: #2FD480;
+  --amber: #F2A33C;
+  --coral: #F0664F;
+
+  /* layout */
+  --maxw: 1240px;
+  --pad: clamp(20px, 5vw, 64px);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --ease: cubic-bezier(.16,.84,.32,1);
+}
+
+[data-theme='dark'] {
+  --bg: #08080F;
+  --bg-soft: #0D0D17;
+  --surface: #14141F;
+  --surface-2: #1B1B29;
+  --text: #F4F2FA;
+  --text-dim: #9C98AE;
+  --text-faint: #6B6780;
+  --line: rgba(244,242,250,0.09);
+  --line-strong: rgba(244,242,250,0.16);
+  --mint-bg: rgba(47,212,128,0.12);
+  --amber-bg: rgba(242,163,60,0.12);
+  --violet-bg: rgba(125,59,222,0.16);
+  --shadow: 0 30px 80px -20px rgba(0,0,0,0.6);
+  --noise-opacity: 0.035;
+  --grid-line: rgba(244,242,250,0.045);
+}
+
+[data-theme='light'] {
+  --bg: #F7F6FB;
+  --bg-soft: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-2: #F1EFF8;
+  --text: #15131F;
+  --text-dim: #5C5870;
+  --text-faint: #8B879C;
+  --line: rgba(21,19,31,0.09);
+  --line-strong: rgba(21,19,31,0.16);
+  --mint-bg: rgba(14,154,92,0.10);
+  --amber-bg: rgba(201,122,18,0.10);
+  --violet-bg: rgba(125,59,222,0.09);
+  --shadow: 0 30px 80px -25px rgba(40,30,70,0.20);
+  --noise-opacity: 0.025;
+  --grid-line: rgba(21,19,31,0.05);
+}
+
+/* ===================================================================
+   RESET
+=================================================================== */
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color .4s var(--ease), color .4s var(--ease);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+button { font-family: inherit; cursor: pointer; }
+img { display: block; max-width: 100%; }
+
+::selection {
+  background: var(--violet);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ===================================================================
+   LAYOUT UTILITIES
+=================================================================== */
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+.section {
+  position: relative;
+  padding: clamp(36px, 5vw, 72px) 0;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--violet);
+  flex: none;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 52px;
+  max-width: 640px;
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 3.6vw, 42px);
+  line-height: 1.1;
+}
+
+.section-head p {
+  color: var(--text-dim);
+  font-size: 17px;
+  max-width: 540px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 24px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: transform .35s var(--ease), background .25s, border-color .25s, color .25s;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--text);
+  color: var(--bg);
+}
+[data-theme='dark'] .btn-primary:hover { background: #fff; }
+[data-theme='light'] .btn-primary:hover { background: #000; }
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+.btn-ghost:hover { border-color: var(--violet); color: var(--violet); }
+
+.btn-violet {
+  background: var(--violet);
+  color: #fff;
+}
+.btn-violet:hover { background: var(--violet-dark); }
+
+/* reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s var(--ease), transform .8s var(--ease);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+@media (max-width: 720px) {
+  .section { padding: 56px 0; }
+}
