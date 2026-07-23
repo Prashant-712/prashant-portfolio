@@ -2,7 +2,7 @@ export const profile = {
   name: 'Prashant',
   role: 'Product Designer',
   location: 'India',
-  email: 'prashant68901@gmail.com',
+  email: 'prashant.designux@gmail.com',
   phone: '+91-8287519160',
   linkedin: 'https://www.linkedin.com/in/prashant-750a25304/',
   tagline: 'Design systems that hold under load.',
