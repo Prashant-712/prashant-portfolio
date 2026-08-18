@@ -114,53 +114,54 @@ export const caseStudies = [
     ],
     internal: true,
   },
-  
-{
-  slug: "whuups-mobile",
-  title: "Whuups",
-  tag: "Mobile App · Chat",
-  problem: "Collaborated with the Sr. Designer on Whuups (Sports & Fitness), a free social platform combining fitness tracking, live sports updates, daily challenges, and messaging.",
-  role: "Product Designer",
-  tools: ["Figma"],
-  status: "Live · NDA Protected",
-  statusVariant: "mint",
-  internal: false,
-  ndaProtected: true,
-  externalUrl: "https://play.google.com/store/apps/details?id=com.whuups.mobile.chat&hl=en_IN",
-  cover: "/assets/Whuups.png",
-},
 
-// In src/data/content.js — replace the existing Big11 entry with this:
+  {
+    slug: "whuups-mobile",
+    title: "Whuups",
+    tag: "Mobile App · Chat",
+    problem:
+      "Collaborated with the Sr. Designer on Whuups (Sports & Fitness), a free social platform combining fitness tracking, live sports updates, daily challenges, and messaging.",
+    role: "Product Designer",
+    tools: ["Figma"],
+    status: "Live · NDA Protected",
+    statusVariant: "mint",
+    internal: false,
+    ndaProtected: true,
+    externalUrl:
+      "https://play.google.com/store/apps/details?id=com.whuups.mobile.chat&hl=en_IN",
+    cover: "/assets/Whuups.png",
+  },
 
-{
-  slug: "Big11-india",
-  title: "Big11 India",
-  tag: "Mobile App · Fantasy Sports",
-  problem: "A redesign of match discovery, KYC verification, and wallet management for a fantasy-sports app Big11 India.",
-  role: "Product Designer",
-  tools: ["Figma"],
-  status: "Shipped · Not Deployed",
-  statusVariant: "mint",
-  internal: true,           // <-- was false, now routes in-app like Reqore
-  ndaProtected: true,
-  cover: "/assets/Big11.png",
-},
+  // In src/data/content.js — replace the existing Big11 entry with this:
 
-{
-  slug: "design-system",
-  title: "Design System & Token Architecture",
-  tag: "Design System · Figma · AI Workflow",
-  problem:
-    "Claude + Figma MCP — Exploring how AI-assisted workflows can accelerate scalable design systems and token architecture.",
-  role: "Product Designer",
-  tools: ["Figma", "Claude", "Figma MCP"],
-  status: "Design System",
-  statusVariant: "mint",
-  internal: true,
-  ndaProtected: false,
-  cover: "/assets/Gemini.png",
-},
-
+  {
+    slug: "design-system",
+    title: "Design System & Token Architecture",
+    tag: "Design System · Figma · AI Workflow",
+    problem:
+      "Claude + Figma MCP — Exploring how AI-assisted workflows can accelerate scalable design systems and token architecture.",
+    role: "Product Designer",
+    tools: ["Figma", "Claude", "Figma MCP"],
+    status: "Design System",
+    statusVariant: "mint",
+    internal: true,
+    ndaProtected: false,
+    cover: "/assets/Gemini.png",
+  },
+  {
+    slug: "Big11-india",
+    title: "Big11 India",
+    tag: "Mobile App · Fantasy Sports",
+    problem:
+      "A redesign of match discovery, KYC verification, and wallet management for a fantasy-sports app Big11 India.",
+    role: "Product Designer",
+    tools: ["Figma"],
+    status: "Shipped · Not Deployed",
+    statusVariant: "mint",
+    internal: true, // <-- was false, now routes in-app like Reqore
+    ndaProtected: true,
+    cover: "/assets/Big11.png",
+  },
 ];
 export const certifications = [
   {
