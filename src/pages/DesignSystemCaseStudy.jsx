@@ -113,7 +113,7 @@ const DesignSystem = () => {
           <div className="ph-title"></div>
           <div className="wrap">
   <img 
-    src="/public/Assets/Brand.jpg" 
+    src="/assets/Brand.jpg"
     alt="Design System Cover"
     style={{ 
       marginTop: '5px', 
@@ -197,7 +197,7 @@ const DesignSystem = () => {
           <div className="imgph" style={{ marginTop: '32px',  }}>
             <div className="ph-title"></div>
            <img 
-  src="/public/Assets/Mapped.jpg" 
+ src="/assets/Mapped.jpg"
   alt="Design System Architecture - 7 Collections Dependency Chain"
   style={{ 
     // marginTop: 'px', 
@@ -295,7 +295,7 @@ const DesignSystem = () => {
           <div className="imgph" style={{ marginTop: '50px',  }}>
             {/* <div className="ph-title">Foundation panel screenshot</div> */}
            <img 
-  src="/public/Assets/Tokens.Png" 
+  src="/assets/Tokens.png"
   alt="Figma Variables Panel - Foundation Tokens"
   style={{ 
     marginTop: '10px', 
@@ -443,7 +443,7 @@ const DesignSystem = () => {
           <div className="imgph" style={{ marginTop: '40px', }}>
             {/* <div className="ph-title">Responsive comparison</div> */}
             <img 
-  src="/public/Assets/Tokens1.png" 
+ src="/assets/Tokens1.png"
   alt="Responsive Design - Desktop Tablet Phone Comparison"
   style={{ 
     marginTop: '10px', 
@@ -619,7 +619,7 @@ const DesignSystem = () => {
           <div className="imgph" style={{ marginTop: '32px',  }}>
             <div className="ph-title">Full token library</div>
             <img 
-  src="/public/Assets/Tokens3.png" 
+ src="/assets/Tokens3.png"
   alt="Figma Variables Token Library - Complete Design System"
   style={{ 
     marginTop: '32px', 
