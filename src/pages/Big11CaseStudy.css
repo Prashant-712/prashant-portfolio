@@ -1,0 +1,79 @@
+.b11-page {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.b11-back a {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.b11-back a:hover {
+  opacity: 1;
+}
+
+.b11-header {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 2rem;
+}
+
+.b11-title {
+  margin-top: 1.5rem;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.b11-sub {
+  max-width: 620px;
+  margin-top: 1.1rem;
+  font-size: 1.05rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+.b11-slides {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.b11-slide {
+  position: relative;
+}
+
+.b11-slide-frame {
+  overflow: hidden;
+}
+
+.b11-slide-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.b11-footer-nav {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+}
+
+.b11-footer-back {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.2s ease;
+}
+
+.b11-footer-back:hover {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.03);
+}

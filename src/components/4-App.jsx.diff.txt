@@ -1,0 +1,19 @@
+// In src/App.jsx
+
+// 1. Add this import near the top, next to ReqoreCaseStudy:
+import Big11CaseStudy from './pages/Big11CaseStudy.jsx'
+
+// 2. Add this route inside <Routes>, next to the Reqore route:
+<Route path="/case-studies/Big11-india" element={<Big11CaseStudy />} />
+
+// Full result should look like:
+//
+// <Routes>
+//   <Route path="/" element={<Home />} />
+//   <Route path="/case-studies/reqore-mail" element={<ReqoreCaseStudy />} />
+//   <Route path="/case-studies/Big11-india" element={<Big11CaseStudy />} />
+// </Routes>
+//
+// Note: the path must exactly match the "slug" field in content.js
+// ("Big11-india", capital B, capital I) since CaseStudyCard.jsx builds
+// the link as `/case-studies/${study.slug}`.

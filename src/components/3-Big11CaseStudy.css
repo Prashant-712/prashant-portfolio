@@ -1,0 +1,40 @@
+.b11-page {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.b11-back a {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.b11-back a:hover {
+  opacity: 1;
+}
+
+.b11-title {
+  margin-top: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.05;
+}
+
+.b11-sub {
+  max-width: 640px;
+  margin-top: 1rem;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+.b11-slides {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.b11-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
