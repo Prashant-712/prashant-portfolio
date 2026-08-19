@@ -148,6 +148,7 @@ export const caseStudies = [
     ndaProtected: false,
     cover: "/assets/Gemini.png",
   },
+  
   {
     slug: "Big11-india",
     title: "Big11 India",
