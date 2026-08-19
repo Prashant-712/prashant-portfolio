@@ -102,7 +102,7 @@ export const caseStudies = [
     statusVariant: "mint",
     cover: "/assets/reqore-dashboard.jpg",
     problem:
-      "B2B teams send bulk campaigns through three or more disconnected tools, with no visibility into why emails actually fail.",
+      " Marketing teams send bulk Email campaigns across three or more disconnected tools, with no clear visibility into why emails fail.",
     overview:
       "A unified platform for building, sending, and monitoring bulk email campaigns at scale — built around a Dead Letter Queue model borrowed from backend engineering and translated for non-technical operators.",
     role: "UX / Product Designer — end to end",

@@ -505,22 +505,10 @@ const DesignSystem = () => {
           <div className="eyebrow">07 — Claude + Figma MCP workflow</div>
           <h2 className="h-title">Claude as a design-system partner, not a replacement</h2>
           <p className="section-lede">
-            Claude helped accelerate repetitive and structural parts of the process. Figma remained the environment where the actual variables and relationships were created and validated — the final source of truth is <b>Figma Variables, not the AI conversation.</b>
+            Claude helped accelerate repetitive and structural parts of the process. Figma remained the environment where the actual variables and relationships were created and validated the final source of truth is <b>Figma Variables, not the AI conversation.</b>
           </p>
 
-          <div className="workflow-strip">
-            <span className="wf-node">Define structure</span>
-            <span className="wf-arrow">→</span>
-            <span className="wf-node">Organize token logic</span>
-            <span className="wf-arrow">→</span>
-            <span className="wf-node">Create variables</span>
-            <span className="wf-arrow">→</span>
-            <span className="wf-node">Map semantic roles</span>
-            <span className="wf-arrow">→</span>
-            <span className="wf-node">Validate relationships</span>
-            <span className="wf-arrow">→</span>
-            <span className="wf-node">Document system</span>
-          </div>
+          
         </div>
       </section>
 
