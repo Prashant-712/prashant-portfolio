@@ -24,7 +24,7 @@ export const experience = [
     period: "2025.09 — 2025.12",
     company: "Whuups",
     location: "Lewes Delaware, United States (Remote)",
-    title: "Product Designer (Contract)",
+    title: "UIUX Designer (Contract)",
     status: "shipped",
     points: [
       "Led end-to-end design for 30+ high-fidelity CRM and ERP screens, using UX research and workflow analysis to improve lead management.",

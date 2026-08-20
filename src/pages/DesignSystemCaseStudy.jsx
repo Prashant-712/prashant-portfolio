@@ -16,7 +16,7 @@ const DesignSystem = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['foundation', 'alias', 'mapped', 'themes', 'responsive', 'component'];
+      const sections = [];
       const y = window.scrollY + 120;
 
       let current = sections[0];
@@ -75,17 +75,7 @@ const DesignSystem = () => {
           Exploring a scalable token architecture with Claude, Figma Variables & MCP — from raw color values to a fully themeable, responsive component system.
         </p>
 
-        <div className="hero-chain">
-          <span className="node">Foundation</span>
-          <span className="arrow">→</span>
-          <span className="node">Alias</span>
-          <span className="arrow">→</span>
-          <span className="node">Mapped</span>
-          <span className="arrow">→</span>
-          <span className="node">Component</span>
-          <span className="arrow">→</span>
-          <span className="node">Responsive</span>
-        </div>
+        
 
         <div className="stat-row">
           <div className="stat">
