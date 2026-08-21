@@ -163,6 +163,32 @@ export const caseStudies = [
     ndaProtected: true,
     cover: "/assets/Big11.png",
   },
+
+{
+  slug: "pune-metro",
+
+  title: "Pune Metro Rail",
+
+  tag: "UX / Product Design · Responsive Web",
+
+  problem:
+    "A redesign Landing page focused on making journey planning, fare information, and passenger support easier to navigate.",
+
+  role: "UIUX Designer",
+
+  tools: ["Figma"],
+
+  status: "Redesign",
+
+  statusVariant: "mint",
+
+  internal: true,
+
+  ndaProtected: false,
+
+  cover: "/public/assets/App.png",
+},
+  
 ];
 export const certifications = [
   {

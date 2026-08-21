@@ -303,7 +303,7 @@ export const reqore = {
     images: [
       "/assets/sketch-dashboard.jpg",
       "/assets/sketch-overlay.jpg",
-      "/assets/sketch-invoice.jpg",
+      // "/assets/sketch-invoice.jpg",
     ],
   },
 
