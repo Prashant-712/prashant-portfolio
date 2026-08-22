@@ -193,7 +193,7 @@ export default function PuneMetroCaseStudy() {
         <div className="pm-compare-label pm-compare-label-after"></div>
         <div className="pm-compare-image">
           <img
-            src="/public/assets/Frame 25.png"    // ← put your After PNG path
+            src="/assets/Frame 25.png"    // ← put your After PNG path
             alt="After – connected journey result"
           />
         </div>
@@ -261,7 +261,7 @@ export default function PuneMetroCaseStudy() {
               {/* Responsive image */}
               <div className="pm-form-image">
                 <img
-                  src="/public/assets/RaiseConcern.png"  
+                  src="/assets/RaiseConcern.png"  
                   alt="Raise a concern form preview"
                   loading="lazy"
                 />
@@ -278,7 +278,7 @@ export default function PuneMetroCaseStudy() {
   {/* Left side – Image */}
   <div className="pm-lost-image">
     <img 
-      src="/public/assets/LostAndFound.png"   // ← your PNG path
+      src="/assets/LostAndFound.png"   // ← your PNG path
       alt="Lost & Found board"
     />
   </div>
@@ -377,7 +377,7 @@ export default function PuneMetroCaseStudy() {
     {/* Full landing page image – responsive */}
     <div className="pm-landing-image">
       <img
-        src="/public/assets/Final.png"   // ← your image path
+        src="/assets/Final.png"   // ← your image path
         alt="Pune Metro final landing page"
         loading="lazy"
       />
