@@ -186,7 +186,7 @@ export const caseStudies = [
 
   ndaProtected: false,
 
-  cover: "/assets/App.png",
+  cover: "/assets/agipp.png",
 },
   
 ];
