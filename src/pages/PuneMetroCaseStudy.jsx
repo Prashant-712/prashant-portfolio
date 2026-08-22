@@ -188,7 +188,7 @@ export default function PuneMetroCaseStudy() {
       {/* BEFORE – add your PNG here */}
       
 
-      {/* AFTER – add your PNG here */}
+      
       <div className="pm-compare-card">
         <div className="pm-compare-label pm-compare-label-after"></div>
         <div className="pm-compare-image">
@@ -261,7 +261,7 @@ export default function PuneMetroCaseStudy() {
               {/* Responsive image */}
               <div className="pm-form-image">
                 <img
-                  src="/public/assets/RaiseConcern.png"   // ← change to your image path
+                  src="/public/assets/RaiseConcern.png"  
                   alt="Raise a concern form preview"
                   loading="lazy"
                 />
