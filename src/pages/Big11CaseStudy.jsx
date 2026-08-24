@@ -6,20 +6,23 @@ import './Big11CaseStudy.css'
 // Files live directly in: public/assets/  (NOT public/assets/case-study/)
 // Note: "07" is intentionally skipped in the source files.
 const SLIDES = [
-  { src: '/assets/01-cover.svg', alt: 'Big11 India — Cover' },
-  { src: '/assets/02-snapshot.svg', alt: 'Big11 India — Snapshot' },
-  { src: '/assets/03-brief.svg', alt: 'Big11 India — The Brief' },
-  { src: '/assets/04-solution.svg', alt: 'Big11 India — Solution' },
-  { src: '/assets/05-define.svg', alt: 'Big11 India — Define' },
-  { src: '/assets/Research.svg', alt: 'Big11 India — Research' },
-  { src: '/assets/05-define.svg', alt: 'Big11 India — Define' },
-  { src: '/assets/06-user-flow.svg', alt: 'Big11 India — User Flow' },
-  { src: '/assets/08-information-architecture.svg', alt: 'Big11 India — Information Architecture' },
-  { src: '/assets/09-competitive-analysis.svg', alt: 'Big11 India — Competitive Analysis' },
-  { src: '/assets/10-wireframes.svg', alt: 'Big11 India — Wireframes' },
-  { src: '/assets/11-design-system.svg', alt: 'Big11 India — Design System' },
-  { src: '/assets/12-final-screens.svg', alt: 'Big11 India — Final High-Fidelity Screens' },
-  // { src: '/assets/13-footer.svg', alt: 'Big11 India — Footer' }, // uncomment once this file exists / is renamed
+  { src: '/assets/Big1.png', alt: 'Big11 India — Cover' },
+  { src: '/assets/Big2.png', alt: 'Big11 India — Snapshot' },
+  { src: '/assets/Big3.png', alt: 'Big11 India — The Brief' },
+  { src: '/assets/Big4.png', alt: 'Big11 India — Solution' },
+  { src: '/assets/Big5.png', alt: 'Big11 India — Define' },
+  { src: '/assets/Big6.png', alt: 'Big11 India — Research' },
+  { src: '/assets/Big7.png', alt: 'Big11 India — User Flow' },
+  { src: '/assets/Big8.png', alt: 'Big11 India — Information Architecture' },
+  { src: '/assets/Big9.png', alt: 'Big11 India — Competitive Analysis' },
+  { src: '/assets/Big10.png', alt: 'Big11 India — Wireframes' },
+  { src: '/assets/Big11.png', alt: 'Big11 India — Design System' },
+  { src: '/assets/Big12.png', alt: 'Big11 India — Final Screens 1' },
+  { src: '/assets/Big13.png', alt: 'Big11 India — Final Screens 2' },
+  { src: '/assets/Big14.png', alt: 'Big11 India — Final Screens 3' },
+  { src: '/assets/Big15.png', alt: 'Big11 India — Final Screens 4' },
+  { src: '/assets/Big16.png', alt: 'Big11 India — Final Screens 5' },
+  { src: '/assets/Big17.png', alt: 'Big11 India — Final Screens 6' },
 ]
 
 export default function Big11CaseStudy() {
