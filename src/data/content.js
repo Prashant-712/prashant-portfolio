@@ -96,7 +96,7 @@ export const skillGroups = [
 export const caseStudies = [
   {
     slug: "reqore-mail",
-    title: "Reqore Mail",
+    title: "Reqore Mail (MVP)",
     tag: "B2B SaaS · Email Infrastructure",
     status: "Shipped · Portfolio Project",
     statusVariant: "mint",
