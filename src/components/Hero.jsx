@@ -51,7 +51,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/assets/Prashant-Resume.pdf"
+              href="/assets/PRASHANT.DESIGN.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn btn-resume"
