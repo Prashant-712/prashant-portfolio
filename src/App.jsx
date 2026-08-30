@@ -7,6 +7,7 @@ import ReqoreCaseStudy from './pages/ReqoreCaseStudy.jsx'
 import Big11CaseStudy from './pages/Big11CaseStudy.jsx'
 import DesignSystemCaseStudy from './pages/DesignSystemCaseStudy.jsx'
 import PuneMetroCaseStudy from './pages/PuneMetroCaseStudy.jsx'
+import { Analytics } from "@vercel/analytics/next"
 
 function ScrollToTop() {
   const location = useLocation()
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <Analytics />
       <Footer />
     </>
   )
