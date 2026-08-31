@@ -19,7 +19,7 @@ export const reqore = {
 
   problem: {
     heading: "The problem Statement",
-    body: "Modern B2B teams rely on email to reach thousands, sometimes millions, of leads in a short window. But running bulk campaigns at scale introduces real failure modes,unreliable delivery, system breakdowns, and no clear KPIs for send performance, delivery health, or campaign success.",
+    body: "Modern Marketing teams rely on email to reach thousands, sometimes millions, of leads in a short window. But running bulk campaigns at scale introduces real failure modes,unreliable delivery, system breakdowns, and no clear KPIs for send performance, delivery health, or campaign success.",
     friction: [
       {
         area: "Admins",

@@ -172,9 +172,9 @@ export default function ReqoreCaseStudy() {
           />
         </Reveal>
 
-        {/* 11 COMPETITIVE ANALYSIS */}
+        {/* 08 COMPETITIVE ANALYSIS */}
         <Reveal as="section" className="rq-block">
-          <SectionLabel>11 · Competitive analysis</SectionLabel>
+          <SectionLabel>08 · Competitive analysis</SectionLabel>
           <h2 className="rq-h2">{reqore.competitiveAnalysis.heading}</h2>
           <p className="rq-p">{reqore.competitiveAnalysis.body}</p>
           <div className="rq-matrix-table-wrap">
@@ -195,7 +195,7 @@ export default function ReqoreCaseStudy() {
             ))}
           </div>
         </Reveal>
-        {/* 08 DATA FLOW */}
+        {/* 09 DATA FLOW */}
         <Reveal as="section" className="rq-block">
           <SectionLabel>08 · Systems mapping</SectionLabel>
           <h2 className="rq-h2">{reqore.dataFlow.heading}</h2>
@@ -220,22 +220,29 @@ export default function ReqoreCaseStudy() {
           </div>
         </Reveal>
 
-        {/* 09 FLOW DIAGRAM */}
-        <Reveal as="section" className="rq-block">
-          <SectionLabel>09 · Primary user flow</SectionLabel>
-          <h2 className="rq-h2">{reqore.flowDiagram.heading}</h2>
-          <div className="rq-flow-chain">
-            {reqore.flowDiagram.steps.map((s, i) => (
-              <span key={s} className="rq-flow-chip-wrap">
-                <span className="rq-flow-chip">{s}</span>
-                {i < reqore.flowDiagram.steps.length - 1 && (
-                  <span className="rq-flow-chip-arrow">→</span>
-                )}
-              </span>
-            ))}
-          </div>
-          <p className="rq-p rq-flow-note">{reqore.flowDiagram.note}</p>
-        </Reveal>
+       {/* 09 FLOW DIAGRAM */}
+<Reveal as="section" className="rq-block">
+  <SectionLabel>09 · Primary user flow</SectionLabel>
+  <h2 className="rq-h2">{reqore.flowDiagram.heading}</h2>
+  <div className="rq-flow-chain">
+    {reqore.flowDiagram.steps.map((s, i) => (
+      <span key={s} className="rq-flow-chip-wrap">
+        <span className="rq-flow-chip">{s}</span>
+        {i < reqore.flowDiagram.steps.length - 1 && (
+          <span className="rq-flow-chip-arrow">→</span>
+        )}
+      </span>
+    ))}
+  </div>
+
+  <img
+    src="/Public/assets/User Flow.png"
+    alt="Reqore Mail primary user flow"
+    className="rq-flow-diagram-img"
+  />
+
+  <p className="rq-p rq-flow-note">{reqore.flowDiagram.note}</p>
+</Reveal>
 
         {/* 10 SKETCHES */}
         <Reveal as="section" className="rq-block">
@@ -256,7 +263,7 @@ export default function ReqoreCaseStudy() {
         </Reveal>
 
 
-        {/* 12 DESIGN SYSTEM */}
+        {/* 11 DESIGN SYSTEM */}
         <Reveal as="section" className="rq-block">
           <SectionLabel>12 · Design system</SectionLabel>
           <h2 className="rq-h2">{reqore.designSystem.heading}</h2>
@@ -268,7 +275,7 @@ export default function ReqoreCaseStudy() {
           />
         </Reveal>
 
-        {/* 13 FINAL DESIGNS */}
+        {/* 12 FINAL DESIGNS */}
         <Reveal as="section" className="rq-block">
           <SectionLabel>13 · Final designs</SectionLabel>
           <h2 className="rq-h2">High-Fidelity Screens & features of MVP</h2>
