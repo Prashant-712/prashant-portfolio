@@ -235,11 +235,11 @@ export default function ReqoreCaseStudy() {
     ))}
   </div>
 
-  <img
-    src="/Public/assets/User-flow.png"
-    alt="Reqore Mail primary user flow"
-    className="rq-flow-diagram-img"
-  />
+ <img
+  src="/assets/User-flow.png"
+  alt="Reqore Mail primary user flow"
+  className="rq-flow-diagram-img"
+/>
 
   <p className="rq-p rq-flow-note">{reqore.flowDiagram.note}</p>
 </Reveal>
