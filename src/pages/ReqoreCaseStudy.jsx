@@ -236,7 +236,7 @@ export default function ReqoreCaseStudy() {
   </div>
 
   <img
-    src="/Public/assets/User Flow.png"
+    src="/Public/assets/User-flow.png"
     alt="Reqore Mail primary user flow"
     className="rq-flow-diagram-img"
   />
