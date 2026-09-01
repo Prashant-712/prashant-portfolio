@@ -33,14 +33,11 @@ export default function CaseStudyCard({ study }) {
         <p className="cs-card-problem">{study.problem}</p>
 
         <div className="cs-card-meta">
-          <div>
+          {/* <div>
             <p className="cs-card-meta-label">Role</p>
             <p className="cs-card-meta-value">{study.role}</p>
-          </div>
-          <div>
-            <p className="cs-card-meta-label">Tools</p>
-            <p className="cs-card-meta-value">{study.tools.join(', ')}</p>
-          </div>
+          </div> */}
+          
         </div>
       </div>
     </>

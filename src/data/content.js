@@ -102,11 +102,11 @@ export const caseStudies = [
     statusVariant: "mint",
     cover: "/assets/reqore-dashboard.jpg",
     problem:
-      " Marketing teams send bulk Email campaigns across three or more disconnected tools, with no clear visibility into why emails fail.",
+      "This case study reimagines the Email marketing workflow for B2B teams, introducing AWS-powered infrastructure, SES for delivery, SNS for real-time events, and SQS for DLQ handling designed directly into the UI so invisible backend logic becomes a visible part of the workflow.",
     overview:
       "A unified platform for building, sending, and monitoring bulk email campaigns at scale — built around a Dead Letter Queue model borrowed from backend engineering and translated for non-technical operators.",
-    role: "UX / Product Designer — end to end",
-    tools: ["Figma", "FigJam", "Google Workspace"],
+    // role: "UX / Product Designer — end to end",
+    // tools: ["Figma", "FigJam", "Google Workspace"],
     outcomes: [
       "Collapsed campaign creation into one guided 6-step flow",
       "Designed a plain-language DLQ screen for non-technical recovery",
