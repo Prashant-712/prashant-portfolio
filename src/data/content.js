@@ -121,8 +121,8 @@ export const caseStudies = [
     tag: "Mobile App · Fantasy Sports",
     problem:
       "A redesign of match discovery, KYC verification, and wallet management for a fantasy-sports app Big11 India.",
-    role: "Product Designer",
-    tools: ["Figma"],
+    // role: "Product Designer",
+    // tools: ["Figma"],
     status: "Shipped · Not Deployed",
     statusVariant: "mint",
     internal: true, // <-- was false, now routes in-app like Reqore
@@ -135,8 +135,8 @@ export const caseStudies = [
     tag: "Mobile App · Chat",
     problem:
       "Collaborated with the Sr. Designer on Whuups (Sports & Fitness), a free social platform combining fitness tracking, live sports updates, daily challenges, and messaging.",
-    role: "Product Designer",
-    tools: ["Figma"],
+    // role: "Product Designer",
+    // tools: ["Figma"],
     status: "Live · NDA Protected",
     statusVariant: "mint",
     internal: false,
