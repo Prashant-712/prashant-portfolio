@@ -1,4 +1,4 @@
-/* ============================================================
+==============================================
    GLOBAL / SAFETY RESET
    Prevents the most common mobile bugs: horizontal scrollbars
    from grids/tables overflowing, and padding/border math
@@ -1662,5 +1662,75 @@ img {
   .rq-flow-chip {
     font-size: 11px;
     padding: 6px 10px;
+  }
+}
+
+/* =========================================
+   TIGHTEN INTRO → BRANDING → PROBLEM
+========================================= */
+
+.rq-intro {
+  padding-top: 20px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+.rq-branding-section {
+  margin-top: 20px !important;
+  margin-bottom: 30px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.rq-branding-header {
+  margin-bottom: 20px !important;
+}
+
+.rq-branding-image-wrap {
+  margin: 0 !important;
+}
+
+.rq-branding-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rq-branding-section + .rq-block {
+  padding-top: 30px !important;
+}
+
+@media (max-width: 560px) {
+
+  .rq-intro {
+    padding-top: 16px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .rq-branding-section {
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .rq-branding-header {
+    margin-bottom: 16px !important;
+  }
+
+  .rq-branding-section + .rq-block {
+    padding-top: 24px !important;
+  }
+
+}
+
+.rq-branding-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 560px) {
+  .rq-branding-image {
+    border-radius: 10px;
   }
 }

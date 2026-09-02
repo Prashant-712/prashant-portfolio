@@ -64,6 +64,34 @@ export default function ReqoreCaseStudy() {
           <p>{reqore.intro}</p>
         </Reveal>
 
+
+{/* BRANDING SYSTEM */}
+<Reveal as="section" className="rq-branding-section">
+  <div className="rq-branding-header">
+    {/* <SectionLabel>Branding · Visual system</SectionLabel> */}
+
+    {/* <h2 className="rq-h2">
+      One visual language,
+      <br />
+      across every screen.
+    </h2> */}
+
+    {/* <p className="rq-p">
+      A scalable visual identity designed to maintain consistency
+      across desktop, tablet, and mobile experiences.
+    </p> */}
+  </div>
+
+  <div className="rq-branding-image-wrap">
+    <img
+      src="/assets/Brand-Asset.png"
+      alt="Reqore Mail branding system showing logo, typography, colors, product mockup and responsive visual language"
+      className="rq-branding-image"
+    />
+  </div>
+</Reveal>
+
+
         {/* 01 PROBLEM */}
         <Reveal as="section" className="rq-block">
           <SectionLabel>01 · The problem</SectionLabel>
