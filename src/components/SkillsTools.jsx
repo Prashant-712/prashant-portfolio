@@ -25,7 +25,7 @@ export default function SkillsTools() {
         </div>
 
         <Reveal as="div" delay={200} className="certs-row">
-          <p className="skill-group-label">Certifications</p>
+          <p className="skill-group-label"></p>
           <div className="certs-list">
             {certifications.map((c) => (
               <a

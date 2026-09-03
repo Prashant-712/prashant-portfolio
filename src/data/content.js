@@ -24,7 +24,7 @@ export const experience = [
     period: "2025.09 — 2025.12",
     company: "Whuups",
     location: "Lewes Delaware, United States (Remote)",
-    title: "UIUX Designer (Contract)",
+    title: "UIUX Designer (Freelance-Contract)",
     status: "shipped",
     points: [
       "Led end-to-end design for 30+ high-fidelity CRM and ERP screens, using UX research and workflow analysis to improve lead management.",
@@ -49,7 +49,7 @@ export const experience = [
     links: [{ label: "basketo.in", url: "https://basketo.in" }],
   },
   {
-    period: "2025.08 — 2025.09",
+    period: "2025.05 — 2025.07",
     company: "Vislona",
     location: "Tamil Nadu, India",
     title: "UX Researcher",
@@ -191,18 +191,7 @@ export const caseStudies = [
   
 ];
 export const certifications = [
-  {
-    title: "UI/UX Design Internship Certificate",
-    org: "Vislona",
-    period: "Aug 2025 – Sep 2025",
-    url: "https://drive.google.com/file/d/1RdDTfD_4PJTCvftTL6AP9LE7HPfHpcb2/view",
-  },
-  {
-    title: "UI/UX Design Internship Certificate",
-    org: "Mixins Technology",
-    period: "Jul 2025 – Sep 2025",
-    url: "https://drive.google.com/file/d/1DAj3NUxn5Uw3IWhKAJmNqethgB3meLlz/view",
-  },
+  
 ];
 
 export const education = {
